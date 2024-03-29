@@ -21,7 +21,7 @@ def image_to_base64(img):
 
 
 # Define the URL from where to download the model
-model_url = 'https://github.com/basuru07/oil_face_detection/raw/main/model.pth'
+model_url = 'https://github.com/basuru07/oily_skin/raw/main/model.pth'
 
 # Download the model file locally
 local_model_path = 'model.pth'
@@ -32,7 +32,6 @@ with open(local_model_path, 'wb') as f:
 # Load your pre-trained model from the local file
 best_model = torch.load(local_model_path, map_location=torch.device('cpu'))
 best_model.eval()
-
 # Define a function to preprocess the image for inference
 
 
